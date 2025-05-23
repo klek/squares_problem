@@ -1,0 +1,1 @@
+# A squares problem
