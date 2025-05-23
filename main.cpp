@@ -8,6 +8,7 @@
 
 #include <iostream>
 
+// Calculate the number of squares
 int num_squares( const int n )
 {
 	int squares = 0;
@@ -22,8 +23,18 @@ int num_squares( const int n )
 
 int main( )
 {
-	// Tests with N starting from 1 and increasing
-	int n = 1;
+	// Tests with N starting from -2 and increasing although I would not consider
+	// a negative number to be a valid input
+	int n = -2;
+	std::cout << "Number of squares for N = " << n << " is: " << num_squares( n )
+			  << std::endl;
+	n = -1;
+	std::cout << "Number of squares for N = " << n << " is: " << num_squares( n )
+			  << std::endl;
+	n = 0;
+	std::cout << "Number of squares for N = " << n << " is: " << num_squares( n )
+			  << std::endl;
+	n = 1;
 	std::cout << "Number of squares for N = " << n << " is: " << num_squares( n )
 			  << std::endl;
 	n = 2;
@@ -39,6 +50,10 @@ int main( )
 	std::cout << "Number of squares for N = " << n << " is: " << num_squares( n )
 			  << std::endl;
 	n = 6;
+	std::cout << "Number of squares for N = " << n << " is: " << num_squares( n )
+			  << std::endl;
+	// For fun, a larger number but not huge
+	n = 2000000;
 	std::cout << "Number of squares for N = " << n << " is: " << num_squares( n )
 			  << std::endl;
 
